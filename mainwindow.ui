@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEditMatchQuery">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>241</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonMatchQuery">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>20</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>场地查询</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonTeamQuery">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>70</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>球队查询</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditTeamQuery">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>241</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>球队管理</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAddTeam"/>
+    <addaction name="separator"/>
+    <addaction name="actionshowAllTeam"/>
+    <addaction name="separator"/>
+    <addaction name="actionRemoveTeam"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>场次管理</string>
+    </property>
+    <addaction name="actionAddMatch"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowAllMatch"/>
+    <addaction name="separator"/>
+    <addaction name="actionRemoveMatch"/>
+    <addaction name="separator"/>
+    <addaction name="actionMatchManager"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAddTeam">
+   <property name="text">
+    <string>AddTeam</string>
+   </property>
+  </action>
+  <action name="actionshowAllTeam">
+   <property name="text">
+    <string>showAllTeam</string>
+   </property>
+  </action>
+  <action name="actionAddMatch">
+   <property name="text">
+    <string>AddMatch</string>
+   </property>
+  </action>
+  <action name="actionRemoveTeam">
+   <property name="text">
+    <string>RemoveTeam</string>
+   </property>
+  </action>
+  <action name="actionShowAllMatch">
+   <property name="text">
+    <string>ShowAllMatch</string>
+   </property>
+  </action>
+  <action name="actionRemoveMatch">
+   <property name="text">
+    <string>RemoveMatch</string>
+   </property>
+  </action>
+  <action name="actionMatchManager">
+   <property name="text">
+    <string>MatchPlayersManager</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
