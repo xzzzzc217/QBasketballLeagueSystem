@@ -1,3 +1,4 @@
 # QBasketballLeagueSystem
+东南大学seu23级暑校大作业
 qt课的大作业
-如果有大佬看到可以提一下改进建议，xdx想实现qt与数据库技术的结合
+
